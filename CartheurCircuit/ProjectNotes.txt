@@ -21,4 +21,4 @@ Cartheur Circuit project notes
 	1637: Ready to stop for the day. It will take a bit of time to build-back the intuition for this project.
 13.03.2024
 	1325: Bringing this project forward as a push into metamaterials for wireless power = metawirelesspower.
-
+	1357: Added the hyperphysics reference site to support this effort.
