@@ -1,6 +1,6 @@
 ## circuits
 
-A programmatic way to design and simulate computational-domain circuits in metapower systems
+A programmatic way to design and simulate computational-domain circuits in metapower systems. This is in the spirit of open-source.
 
 ### Background
 
