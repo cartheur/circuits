@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50D8421E-8846-49A6-BBE1-CFDC07C3AC45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cartheur.Analogue</RootNamespace>
+    <AssemblyName>Cartheur.Analogue</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circuit.cs" />
+    <Compile Include="CircuitElement.cs" />
+    <Compile Include="Diode.cs" />
+    <Compile Include="Elements\CapacitorElm.cs" />
+    <Compile Include="Elements\CurrentSource.cs" />
+    <Compile Include="Elements\DCVoltageSource.cs" />
+    <Compile Include="Elements\Ground.cs" />
+    <Compile Include="Elements\InductorElm.cs" />
+    <Compile Include="Elements\LogicInput.cs" />
+    <Compile Include="Elements\OpAmp.cs" />
+    <Compile Include="Elements\Output.cs" />
+    <Compile Include="Elements\Potentiometer.cs" />
+    <Compile Include="Elements\Probe.cs" />
+    <Compile Include="Elements\Resistor.cs" />
+    <Compile Include="Elements\SwitchSPDT.cs" />
+    <Compile Include="Elements\SwitchSPST.cs" />
+    <Compile Include="Elements\Voltage.cs" />
+    <Compile Include="Elements\VoltageInput.cs" />
+    <Compile Include="Elements\Wire.cs" />
+    <Compile Include="ICircuitElement.cs" />
+    <Compile Include="Inductor.cs" />
+    <Compile Include="Lead.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowInfo.cs" />
+    <Compile Include="SIUnits.cs" />
+    <Compile Include="Buttercup\DisposableAction.cs" />
+    <Compile Include="Buttercup\IdWorker.cs" />
+    <Compile Include="Buttercup\InvalidSystemClock.cs" />
+    <Compile Include="Buttercup\TimeExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Buttercup\DisposableAction.cs.meta" />
+    <None Include="Buttercup\IdWorker.cs.meta" />
+    <None Include="Buttercup\InvalidSystemClock.cs.meta" />
+    <None Include="Buttercup\TimeExtensions.cs.meta" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AE9B3BE-11E7-4EEA-B491-06A92CD0C506}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CartheurCircuit</RootNamespace>
+    <AssemblyName>CartheurCircuit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circuit.cs" />
+    <Compile Include="CircuitElement.cs" />
+    <Compile Include="CircuitException.cs" />
+    <Compile Include="CircuitUtilities.cs" />
+    <Compile Include="Diode.cs" />
+    <Compile Include="Elements\InductorElement.cs" />
+    <Compile Include="Elements\RelayElement.cs" />
+    <Compile Include="Elements\Sources\AMSource.cs" />
+    <Compile Include="Elements\AnalogSwitch.cs" />
+    <Compile Include="Elements\AnalogSwitch2.cs" />
+    <Compile Include="Elements\Capacitor.cs" />
+    <Compile Include="Elements\Chip.cs" />
+    <Compile Include="Elements\Chip\ADCElm.cs" />
+    <Compile Include="Elements\Chip\CC2Elm.cs" />
+    <Compile Include="Elements\Chip\CounterElm.cs" />
+    <Compile Include="Elements\Chip\DACElm.cs" />
+    <Compile Include="Elements\Chip\DecadeElm.cs" />
+    <Compile Include="Elements\Chip\DeMultiplexerElm.cs" />
+    <Compile Include="Elements\Chip\DFlipFlop.cs" />
+    <Compile Include="Elements\Chip\FullAdder.cs" />
+    <Compile Include="Elements\Chip\HalfAdder.cs" />
+    <Compile Include="Elements\Chip\JKFlipFlopElm.cs" />
+    <Compile Include="Elements\Chip\LatchElm.cs" />
+    <Compile Include="Elements\Chip\LEDMatrixElm.cs" />
+    <Compile Include="Elements\Chip\MultiplexerElm.cs" />
+    <Compile Include="Elements\Chip\PhaseCompElm.cs" />
+    <Compile Include="Elements\Chip\PisoShiftElm.cs" />
+    <Compile Include="Elements\Chip\SeqGenElm.cs" />
+    <Compile Include="Elements\Chip\SevenSegDecoderElm.cs" />
+    <Compile Include="Elements\Chip\SevenSegElm.cs" />
+    <Compile Include="Elements\Chip\SipoShiftElm.cs" />
+    <Compile Include="Elements\Chip\SRAMElm.cs" />
+    <Compile Include="Elements\Chip\TFlipFlopElm.cs" />
+    <Compile Include="Elements\Chip\TimerElm.cs" />
+    <Compile Include="Elements\Chip\VCOElm.cs" />
+    <Compile Include="Elements\Sources\CurrentSource.cs" />
+    <Compile Include="Elements\DiodeElm.cs" />
+    <Compile Include="Elements\Diode\LEDElm.cs" />
+    <Compile Include="Elements\Diode\ZenerElm.cs" />
+    <Compile Include="Elements\FMSource.cs" />
+    <Compile Include="Elements\Gate\AndGate.cs" />
+    <Compile Include="Elements\Gate\NandGate.cs" />
+    <Compile Include="Elements\Gate\NorGate.cs" />
+    <Compile Include="Elements\Gate\OrGate.cs" />
+    <Compile Include="Elements\Gate\XorGate.cs" />
+    <Compile Include="Elements\Ground.cs" />
+    <Compile Include="Elements\Inverter.cs" />
+    <Compile Include="Elements\InvertingSchmittTrigger.cs" />
+    <Compile Include="Elements\Lamp.cs" />
+    <Compile Include="Elements\LogicGate.cs" />
+    <Compile Include="Elements\LogicInput.cs" />
+    <Compile Include="Elements\LogicOutput.cs" />
+    <Compile Include="Elements\Memristor.cs" />
+    <Compile Include="Elements\Mosfet.cs" />
+    <Compile Include="Elements\Mosfet\JfetElm.cs" />
+    <Compile Include="Elements\Mosfet\NMosfet.cs" />
+    <Compile Include="Elements\Mosfet\PMosfet.cs" />
+    <Compile Include="Elements\OpAmp.cs" />
+    <Compile Include="Elements\Output.cs" />
+    <Compile Include="Elements\Potentiometer.cs" />
+    <Compile Include="Elements\Probe.cs" />
+    <Compile Include="Elements\Resistor.cs" />
+    <Compile Include="Elements\SchmittTrigger.cs" />
+    <Compile Include="Elements\SiliconRectifier.cs" />
+    <Compile Include="Elements\SparkGap.cs" />
+    <Compile Include="Elements\SwitchSPDT.cs" />
+    <Compile Include="Elements\SwitchSPST.cs" />
+    <Compile Include="Elements\TappedTransformer.cs" />
+    <Compile Include="Elements\Transformer.cs" />
+    <Compile Include="Elements\Transistor.cs" />
+    <Compile Include="Elements\Triode.cs" />
+    <Compile Include="Elements\TriStateBuffer.cs" />
+    <Compile Include="Elements\TunnelDiode.cs" />
+    <Compile Include="Elements\Voltage.cs" />
+    <Compile Include="Elements\Sources\AcVoltageSource.cs" />
+    <Compile Include="Elements\Sources\DcVoltageSource.cs" />
+    <Compile Include="Elements\Sources\Rail\AntennaInput.cs" />
+    <Compile Include="Elements\Sources\Rail\ClockInput.cs" />
+    <Compile Include="Elements\Sources\Rail\VarRailElm.cs" />
+    <Compile Include="Elements\Sources\VoltageInput.cs" />
+    <Compile Include="Elements\Wire.cs" />
+    <Compile Include="FindPathInfo.cs" />
+    <Compile Include="Handling\DisposableAction.cs" />
+    <Compile Include="Handling\IdWorker.cs" />
+    <Compile Include="Handling\InvalidSystemClock.cs" />
+    <Compile Include="Handling\TimeExtensions.cs" />
+    <Compile Include="ICircuitElement.cs" />
+    <Compile Include="Inductor.cs" />
+    <Compile Include="Lead.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowInfo.cs" />
+    <Compile Include="ScopeFrame.cs" />
+    <Compile Include="SIUnits.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\AKAT-1.jpg" />
+    <Content Include="docs\analysis problems in dynamics\1.png" />
+    <Content Include="docs\analysis problems in dynamics\2.png" />
+    <Content Include="docs\analysis problems in dynamics\3.png" />
+    <Content Include="docs\analysis problems in dynamics\4.png" />
+    <Content Include="docs\analysis problems in dynamics\5.png" />
+    <Content Include="docs\Further information.txt" />
+    <Content Include="docs\media\200903 EC 1 %28Low%29.mp4" />
+    <Content Include="docs\media\Analog Computer Bouncing Ball %28Low%29.mp4" />
+    <Content Include="ProjectNotes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\AmplifierWithOpAmpDetailed.mo" />
+    <None Include="docs\anacomp.zip" />
+    <None Include="docs\Analog Ontology.pdf" />
+    <None Include="docs\Comdyna-GP6-Operators-Manual.pdf" />
+    <None Include="docs\DC Circuit analysis using c sharp.pdf" />
+    <None Include="docs\EC1-OP.pdf" />
+    <None Include="docs\FLEPAC.pdf" />
+    <None Include="docs\opamp\US2412227.pdf" />
+    <None Include="docs\PractElect1978_1.pdf" />
+    <None Include="docs\PractElect1978_2.pdf" />
+    <None Include="docs\PractElect1978_3.pdf" />
+    <None Include="docs\PractElect1978_4.pdf" />
+    <None Include="docs\vogel_schaltplan.pdf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

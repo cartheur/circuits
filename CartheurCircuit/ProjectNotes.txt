@@ -1,0 +1,22 @@
+﻿April 2017
+Cartheur Circuit project notes
+
+08.04.2017
+	902: Have separated this ambition from what was the differential analyzer, where the plot form of a solution was the highlight. However, it mutated into a pandering X-Prize piece of shit and Aeon got involved. I've backed up but this project is solely for advancing analog computing operations in a software package.
+	1051: Found the analog computer docs as well as the paper which probably inspired the creation of this project.
+	1105: Would like to make this an open source project. If I can remember how I started with Mathematics! :-)
+25.08.2017
+	1828: Dropped in to explore around a bit.
+05.07.2021
+	1218: Here to renew this project. There have been quite a few developments since the last time I was here. Heiserman's EAMI platform for instance. It MUST be able to be integrated using an analogue-digital-hybrid computer arrangment. I am here to get my mind around the simuation part as I can construct circuits pretty easily these days with SparkFun digital potentiometers--only in a 0-10K Ohm range.
+	1220: What I need is a visual simulation interface where I can add a single OpAmp, resistor, capacitor, and reference voltage. Trying to see this in code is impossible when the system becomes large. How can I go about doing this?
+	1445: Cleaned up the project and got some GetInfo() methods sorted, as it will be helpful for visualizations. I will probably build it myself and put it on GitHub.
+	1446: Place to start is with the tests and work into the code. Starting with OpAmp.
+	1505: Whew! A bit of drama with the test engine. It is working now.
+	1522: Went through what I could find and now (I think) I am on my own from here on out.
+07.08.2022
+	1429: I have (re) discovered the analogue in m.e. Programmable resistor arrays performing matrix computation is the root of what a circuit should be able to simulate.
+	1431: I mean *really*: Can I simulate a matrix computation in an example deep learning network?
+	1604: Putting some time into creating a summer. This should be possible, maybe?
+	1637: Ready to stop for the day. It will take a bit of time to build-back the intuition for this project.
+
