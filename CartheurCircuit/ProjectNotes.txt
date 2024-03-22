@@ -22,3 +22,6 @@ Cartheur Circuit project notes
 13.03.2024
 	1325: Bringing this project forward as a push into metamaterials for wireless power = metawirelesspower.
 	1357: Added the hyperphysics reference site to support this effort.
+22.03.2024
+	1021: Looking into the first scope of this work.
+
